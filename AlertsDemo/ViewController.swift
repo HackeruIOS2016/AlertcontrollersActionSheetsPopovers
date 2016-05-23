@@ -10,6 +10,33 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBAction func dispActionSheet(sender: UIButton) {
+        let alert = UIAlertController(title: "Sheet?", message: nil, preferredStyle: .ActionSheet)
+        
+        alert.addAction(UIAlertAction(title: "Flag", style: .Default, handler: { (action) -> Void in
+            print("Flag")
+        }))
+        
+        alert.addAction(UIAlertAction(title: "Mark as Unread", style: .Default, handler: { (action) -> Void in
+            print("Mark as Unread")
+        }))
+        
+        alert.addAction(UIAlertAction(title: "Move to Junk", style: .Default, handler: { (action) -> Void in
+            print("Move to Junk")
+        }))
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: .Destructive, handler: { (action) -> Void in
+            print("Cancel")
+        }))
+        
+        //customise for IPAD:
+        alert.popoverPresentationController?.sourceRect = sender.frame
+        alert.popoverPresentationController?.sourceView = self.view
+        
+    
+        presentViewController(alert, animated: true, completion: nil)
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -19,39 +46,5 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    @IBAction func addPerson(sender: UIButton) {
-       let helper = AlertHelper()
-       presentViewController(helper.alert, animated: true, completion: nil)
-    }
-    
-    
-    @IBAction func dispAlert(sender: UIButton) {
-        //1) init an alertViewController:
-        let alert = UIAlertController(
-            title: "Good Morning",
-            message: "Would you like some coffee?",
-            preferredStyle: .Alert
-        )
-        
-        //2) Set some properties:
-        alert.addAction(UIAlertAction(title: "No", style: .Destructive, handler: { (action) -> Void in
-            print("No Tapped")
-        }))
-        
-        alert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: { (action) -> Void in
-            print("Ok Tapped")
-        }))
-        
-     
-        
-        
-        
-        //3) presentViewController(animated:)
-        presentViewController(alert, animated: true, completion: nil)
-    }
-
-
-
 }
 
