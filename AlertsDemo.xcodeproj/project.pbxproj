@@ -12,6 +12,7 @@
 		6D6955111CF2D7E90007970C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D69550F1CF2D7E90007970C /* Main.storyboard */; };
 		6D6955131CF2D7E90007970C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D6955121CF2D7E90007970C /* Assets.xcassets */; };
 		6D6955161CF2D7E90007970C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D6955141CF2D7E90007970C /* LaunchScreen.storyboard */; };
+		6D69551E1CF2EAD30007970C /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D69551D1CF2EAD30007970C /* AlertHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		6D6955121CF2D7E90007970C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6D6955151CF2D7E90007970C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6D6955171CF2D7E90007970C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D69551D1CF2EAD30007970C /* AlertHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				6D6955121CF2D7E90007970C /* Assets.xcassets */,
 				6D6955141CF2D7E90007970C /* LaunchScreen.storyboard */,
 				6D6955171CF2D7E90007970C /* Info.plist */,
+				6D69551D1CF2EAD30007970C /* AlertHelper.swift */,
 			);
 			path = AlertsDemo;
 			sourceTree = "<group>";
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D69551E1CF2EAD30007970C /* AlertHelper.swift in Sources */,
 				6D69550E1CF2D7E90007970C /* ViewController.swift in Sources */,
 				6D69550C1CF2D7E90007970C /* AppDelegate.swift in Sources */,
 			);
